@@ -1,0 +1,25 @@
+{
+  "name": "DateFindNext",
+  "description": "Retrouve la date suivante la date courante dans un tableau de date",
+  "author": "Manu.n",
+  "params": [
+    {
+      "name": "array",
+      "displayName": "Tableau de date",
+      "type": { "kind": "array", "items": "date-time" }
+    },
+    {
+      "name": "arrayformat",
+      "displayName": "Array, Date Format (short, medium, long)",
+      "type": "string"
+    },
+    {
+      "name": "datecurrent",
+      "displayName": "Date courante",
+      "type": "date-time"
+    }
+  ],
+  "result": {
+    "type": "date-time"
+  }
+}

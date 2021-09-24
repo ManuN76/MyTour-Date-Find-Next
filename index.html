@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+<script src='glidedate.js'></script>'
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+
+<script>
+  // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  testDebug();
+
+  async function testDebug() {
+  let arr = { type: { "kind": "array", "items": "date-time" }, value: [
+"08/05/2021",
+"09/05/2021",
+"10/05/2021",
+"11/05/2021",
+"12/05/2021",
+"13/05/2021",
+"14/05/2021",
+"15/05/2021",
+"16/05/2021",
+"16/05/2021",
+"17/05/2021",
+"18/05/2021",
+"18/05/2021",
+"19/05/2021",
+"20/05/2021",
+"21/05/2021",
+"22/05/2021",
+"16/06/2021",
+"07/05/2021",
+"16/06/2021",
+"02/04/2021",
+"02/04/2021"
+] };
+
+  let format = { type: "string", value: "short" };
+  let current = { type: "date-time", value: "06/05/2021" };
+
+  let result = await window.function(arr,format, current);
+  document.getElementById("result").innerHTML = result;
+
+  }
+</script>
+</body>
+
+</html>
